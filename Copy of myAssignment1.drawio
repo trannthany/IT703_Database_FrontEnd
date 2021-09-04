@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-04T08:38:43.680Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="Nx21_ej7PYBpvIUmabfi" version="15.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-04T08:41:05.939Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="XtLXpwC9M_Ac_HcOB50t" version="15.0.3" type="github">
   <diagram id="S9afzDDr6wnwErve1ACt" name="Page-1">
     <mxGraphModel dx="2882" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -13,7 +13,7 @@
         <mxCell id="tT8xZsPLXBF-Hx5m8fWg-3" value="PK" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;" parent="tT8xZsPLXBF-Hx5m8fWg-2" vertex="1">
           <mxGeometry width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tT8xZsPLXBF-Hx5m8fWg-4" value="InShipID" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;" parent="tT8xZsPLXBF-Hx5m8fWg-2" vertex="1">
+        <mxCell id="tT8xZsPLXBF-Hx5m8fWg-4" value="InShipID PRIMARY KEY" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;" parent="tT8xZsPLXBF-Hx5m8fWg-2" vertex="1">
           <mxGeometry x="30" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="tT8xZsPLXBF-Hx5m8fWg-5" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="tT8xZsPLXBF-Hx5m8fWg-1" vertex="1">
