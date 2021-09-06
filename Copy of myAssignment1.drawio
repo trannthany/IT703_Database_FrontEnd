@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-06T03:16:55.622Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="twgNZSUodWVm4HfsWiV4" version="15.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-06T08:17:57.165Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="kWI3Em_QlfTvUvhsBklu" version="15.0.6" type="github">
   <diagram id="S9afzDDr6wnwErve1ACt" name="Page-1">
     <mxGraphModel dx="3091" dy="899" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -145,7 +145,7 @@
         <mxCell id="tT8xZsPLXBF-Hx5m8fWg-107" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;" parent="tT8xZsPLXBF-Hx5m8fWg-106" vertex="1">
           <mxGeometry width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tT8xZsPLXBF-Hx5m8fWg-108" value="Avaiable_Unit INT" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="tT8xZsPLXBF-Hx5m8fWg-106" vertex="1">
+        <mxCell id="tT8xZsPLXBF-Hx5m8fWg-108" value="Available_Unit INT" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="tT8xZsPLXBF-Hx5m8fWg-106" vertex="1">
           <mxGeometry x="30" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="V6WZm2QGGkZ-h8iW1JQf-10" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="tT8xZsPLXBF-Hx5m8fWg-66" vertex="1">
