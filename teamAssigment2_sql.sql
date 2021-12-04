@@ -1,17 +1,29 @@
-USE BEN_SEAN_THANY_ASSIG2_DB;
+CREATE DATABASE BEN_SEAN_THANY_ASSIG2_DB;
 GO
 
---CREATE DATABASE BEN_SEAN_THANY_ASSIG2_DB;
---DROP DATABASE IF EXISTS BEN_SEAN_THANY_ASSIG2_DB;
+ALTER DATABASE myDB SET RECOVERY FULL;
+GO
+
+USE BEN_SEAN_THANY_ASSIG2_DB;
+GO
+-----------------------------------
+-- CANNOT CHANGE THE DATABSE NAME--
+-----------------------------------
+--ALTER DATABASE BEN_SEAN_THANY_ASSIG2_DB SET OFFLINE;
+--GO
+--ALTER DATABASE BEN_SEAN_THANY_ASSIG2_DB SET ONLINE;
+--GO
+
+
 -- DROP ALL TABLES
 DROP TABLE IF EXISTS 
 	HOUSEKEEPING_REPORT,
+	AVAILABLE_PARKING_SPACE,
 	ROOM_BOOKING_DETAIL,
 	ROOM_STATUS,
 	CHECKING_STATUS,
 	CHARGEBACK,
-	ITEM,
-	AVAILABLE_PARKING_SPACE,
+	ITEM,	
 	CAR_PARK_TYPE,
 	BOOKING,
 	PAYMENT,
@@ -165,32 +177,32 @@ VALUES
 	('A1-02', 'null', 14.88, 1, 1, 'For a person who does not want to be with anyone else.', 1, 3, '2021-10-12', 1),
 	('A1-03', 'null', 14.88, 1, 1, 'For a person who does not want to be with anyone else.', 1, 3, '2021-10-12', 1),
 	('A1-04', 'null', 14.88, 1, 1, 'For a person who does not want to be with anyone else.', 1, 3, '2021-10-12', 1),
-	('A1-05', 'null', 14.88, 1, 1, 'For a person who does not want to be with anyone else.', 1, 3, '2021-10-12', 1),
-	('A1-06', 'null', 14.88, 1, 1, 'For a person who does not want to be with anyone else.', 1, 3, '2021-10-12', 1),
+	('A1-05', 'null', 14.88, 1, 1, 'For a person who does not want to be with anyone else.', 2, 3, '2021-10-12', 1),
+	('A1-06', 'null', 14.88, 1, 1, 'For a person who does not want to be with anyone else.', 2, 3, '2021-10-12', 1),
 	('B1-01', 'null', 29.96, 2, 2, 'For two people who do not want to touch each other.', 1, 3, '2021-10-12', 1),
 	('B1-02', 'null', 29.96, 2, 2, 'For two people who do not want to touch each other.', 1, 3, '2021-10-12', 1),
 	('B1-03', 'null', 29.96, 2, 2, 'For two people who do not want to touch each other.', 1, 3, '2021-10-12', 1),
-	('B1-04', 'null', 29.96, 2, 2, 'For two people who do not want to touch each other.', 1, 3, '2021-10-12', 1),
-	('B1-05', 'null', 29.96, 2, 2, 'For two people who do not want to touch each other.', 1, 3, '2021-10-12', 1),
+	('B1-04', 'null', 29.96, 2, 2, 'For two people who do not want to touch each other.', 2, 3, '2021-10-12', 1),
+	('B1-05', 'null', 29.96, 2, 2, 'For two people who do not want to touch each other.', 2, 3, '2021-10-12', 1),
 	('B1-06', 'null', 29.96, 2, 2, 'For two people who do not want to touch each other.', 1, 3, '2021-10-12', 1),
 	('C1-01', 'null', 32.00, 3, 2, 'For two people who love to hug each other when they are sleeping :D.', 1, 3, '2021-10-12', 1),
 	('C1-02', 'null', 32.00, 3, 2, 'For two people who love to hug each other when they are sleeping :D.', 1, 3, '2021-10-12', 1),
 	('C1-03', 'null', 32.00, 3, 2, 'For two people who love to hug each other when they are sleeping :D.', 1, 3, '2021-10-12', 1),
 	('C1-04', 'null', 32.00, 3, 2, 'For two people who love to hug each other when they are sleeping :D.', 1, 3, '2021-10-12', 1),
-	('C1-05', 'null', 64.00, 4, 4, 'For two people who love to hug each other when they are sleeping :D.', 1, 3, '2021-10-12', 1),
-	('C1-06', 'null', 64.00, 4, 4, 'For two people who love to hug each other when they are sleeping :D.', 1, 3, '2021-10-12', 1),
+	('C1-05', 'null', 64.00, 4, 4, 'For two people who love to hug each other when they are sleeping :D.', 2, 3, '2021-10-12', 1),
+	('C1-06', 'null', 64.00, 4, 4, 'For two people who love to hug each other when they are sleeping :D.', 2, 3, '2021-10-12', 1),
 	('C1-07', 'null', 64.00, 4, 4, 'For two people who love to hug each other when they are sleeping :D.', 1, 3, '2021-10-12', 1),
 	('C1-08', 'null', 64.00, 4, 4, 'For two people who love to hug each other when they are sleeping :D.', 1, 3, '2021-10-12', 1),
 	('D1-01', 'null', 64.00, 5, 4, 'For a tour group, team or a family of 4.', 1, 3, '2021-10-12', 1),
 	('D1-02', 'null', 64.00, 5, 4, 'For a tour group, team or a family of 4.', 1, 3, '2021-10-12', 1),
 	('D1-03', 'null', 64.00, 5, 4, 'For a tour group, team or a family of 4.', 1, 3, '2021-10-12', 1),
 	('D1-04', 'null', 64.00, 5, 4, 'For a tour group, team or a family of 4.', 1, 3, '2021-10-12', 1),
-	('D1-05', 'null', 64.00, 5, 4, 'For a tour group, team or a family of 4.', 1, 3, '2021-10-12', 1),
-	('D1-06', 'null', 64.00, 5, 4, 'For a tour group, team or a family of 4.', 1, 3, '2021-10-12', 1),
+	('D1-05', 'null', 64.00, 5, 4, 'For a tour group, team or a family of 4.', 2, 3, '2021-10-12', 1),
+	('D1-06', 'null', 64.00, 5, 4, 'For a tour group, team or a family of 4.', 2, 3, '2021-10-12', 1),
 	('D1-07', 'null', 64.00, 5, 4, 'For a tour group, team or a family of 4.', 1, 3, '2021-10-12', 1),
 	('D1-08', 'null', 64.00, 5, 4, 'For a tour group, team or a family of 4.', 1, 3, '2021-10-12', 1),
 	('E1-01', 'null', 96.00, 6, 2, 'For 2 people who want plenty of space to play.', 1, 3, '2021-10-12', 1),
-	('E1-02', 'null', 96.00, 6, 2, 'For 2 people who want plenty of space to play.', 1, 3, '2021-10-12', 1),
+	('E1-02', 'null', 96.00, 6, 2, 'For 2 people who want plenty of space to play.', 2, 3, '2021-10-12', 1),
 	('E1-03', 'null', 96.00, 6, 2, 'For 2 people who want plenty of space to play.', 1, 3, '2021-10-12', 1),
 	('E1-04', 'null', 96.00, 6, 2, 'For 2 people who want plenty of space to play.', 1, 3, '2021-10-12', 1)
 ;
@@ -254,7 +266,7 @@ GO
 
 -- CAP 12
 CREATE TABLE PAYMENT(
-	PaymentID INT PRIMARY KEY IDENTITY(1,1),
+	PaymentID INT NOT NULL IDENTITY(1,1),
 	GuestID VARCHAR(50) NOT NULL FOREIGN KEY REFERENCES GUEST(GuestDrivingID)
 	ON DELETE CASCADE
 	ON UPDATE CASCADE,
@@ -263,7 +275,8 @@ CREATE TABLE PAYMENT(
 	ON UPDATE CASCADE,
 	PaymentAmount MONEY NOT NULL,
 	PaymentDate DATE NOT NULL,
-	IsPaid BIT NOT NULL DEFAULT 0
+	IsPaid BIT NOT NULL DEFAULT 0,
+	PRIMARY KEY (PaymentID, GuestID)
 );
 GO
 
@@ -277,9 +290,8 @@ GO
 -- CAP 13
 CREATE TABLE BOOKING(
 	BookingID INT PRIMARY KEY IDENTITY(1,1),
-	PaymentID INT NOT NULL FOREIGN KEY REFERENCES PAYMENT(PaymentID)
-	ON DELETE CASCADE
-	ON UPDATE CASCADE,
+	PaymentID INT NOT NULL,
+	GuestID VARCHAR(50) NOT NULL, 
 	AssignedRoomNum VARCHAR(25) NOT NULL FOREIGN KEY REFERENCES ROOM(RoomNumber)
 	ON DELETE CASCADE
 	ON UPDATE CASCADE,
@@ -295,14 +307,18 @@ CREATE TABLE BOOKING(
 	BookingTypeID INT FOREIGN KEY REFERENCES BOOKING_TYPE(BookingTypeID)
 	ON DELETE CASCADE
 	ON UPDATE CASCADE, 
-	IsCancelled BIT DEFAULT 0
+	IsCancelled BIT DEFAULT 0,
+	CONSTRAINT FK_Guest_Booking FOREIGN KEY(PaymentID, GuestID) 
+	REFERENCES PAYMENT(PaymentID, GuestID)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE
 );
 GO
 
 INSERT INTO BOOKING
 	VALUES
-	(1, 'A1-01', 1, 150.25, 0.0, 'No Comment', 0, 0, 1, 1, 0),
-	(2, 'C1-05', 2,  300.75, 0.0, 'No Comment', 1, 0, 4, 1, 0)
+	(1, 'DL000123', 'A1-01', 1, 150.25, 0.0, 'No Comment', 0, 0, 1, 1, 0),
+	(2, 'DL000124', 'C1-05', 2,  300.75, 0.0, 'No Comment', 1, 0, 4, 1, 0)
 ;
 GO
 
@@ -320,12 +336,95 @@ VALUES
 GO
 
 -- CAP 15
+CREATE TABLE ITEM(
+	ItemID INT PRIMARY KEY IDENTITY(1,1),
+	ItemName VARCHAR(50) NOT NULL,
+	ItemPrice MONEY NOT NULL
+);
+GO
+
+INSERT INTO ITEM
+VALUES
+	('BEER', 9.00),
+	('SODA', 3.50),
+	('BURGER', 14.50),
+	('STEAK', 29.00),
+	('SALAD', 0.50)
+;
+GO
+
+-- CAP 16
+CREATE TABLE CHARGEBACK(
+	ChargeBackID INT IDENTITY(1,1),
+	RoomNumber VARCHAR(5) NOT NULL,	
+	PaymentID INT NOT NULL,
+	GuestID VARCHAR(50) NOT NULL, 	
+	ItemID INT NOT NULL FOREIGN KEY REFERENCES ITEM(ItemID)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE,
+	ItemQuantity INT,
+	DateOfPurchased DATE NOT NULL,
+	CONSTRAINT PK_Guest_CB FOREIGN KEY(PaymentID, GuestID) 
+	REFERENCES PAYMENT(PaymentID, GuestID)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE
+);
+GO
+
+-- CAP 17 
+CREATE TABLE CHECKING_STATUS(
+	CheckingID INT PRIMARY KEY IDENTITY(1, 1),
+	CheckingStatus VARCHAR(55) NOT NULL
+);
+GO
+
+INSERT INTO CHECKING_STATUS
+	VALUES
+		('PENDING'),
+		('HAS CHECKED IN'),
+		('HAS CHECKED OUT')
+;
+GO
+
+-- CAP 18
+CREATE TABLE ROOM_BOOKING_DETAIL(
+	RBD_ID INT PRIMARY KEY IDENTITY(1, 1),
+	RoomNumber VARCHAR(25) NOT NULL FOREIGN KEY REFERENCES ROOM(RoomNumber)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE,
+	RoomStatusID INT NOT NULL FOREIGN KEY REFERENCES ROOM_STATUS(RoomStatusID)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE,
+	PaymentID INT NOT NULL,
+	GuestID VARCHAR(50) NOT NULL,
+	CheckInDate DATE NOT NULL,
+	CheckOutDate DATE NOT NULL,	
+	CheckingIN_OUT_status INT NOT NULL FOREIGN KEY REFERENCES CHECKING_STATUS(CheckingID)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE,
+	CONSTRAINT FK_Guest_Booking_Details FOREIGN KEY(PaymentID, GuestID) 
+	REFERENCES PAYMENT(PaymentID, GuestID)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE
+);
+GO
+
+INSERT INTO ROOM_BOOKING_DETAIL
+	VALUES
+		('A1-01', 2, 1, 'DL000123', '2021-10-13', '2021-10-15', 1),
+		('C1-05', 2, 2, 'DL000124', '2021-10-13', '2021-10-15', 1)
+;
+GO
+
+-- CAP 19
 CREATE TABLE AVAILABLE_PARKING_SPACE(
 	ParkingSpaceID INT PRIMARY KEY IDENTITY(1, 1),
 	ParkingSpaceTypeID INT NOT NULL FOREIGN KEY REFERENCES CAR_PARK_TYPE(CarParkTypeID)
 	ON DELETE CASCADE
 	ON UPDATE CASCADE,
-	RBD_ID INT
+	RBD_ID INT FOREIGN KEY REFERENCES ROOM_BOOKING_DETAIL(RBD_ID)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE
 );
 GO
 
@@ -362,80 +461,6 @@ VALUES
 ;
 GO
 
--- CAP 16
-CREATE TABLE ITEM(
-	ItemID INT PRIMARY KEY IDENTITY(1,1),
-	ItemName VARCHAR(50) NOT NULL,
-	ItemPrice MONEY NOT NULL
-);
-GO
-
-INSERT INTO ITEM
-VALUES
-	('BEER', 9.00),
-	('SODA', 3.50),
-	('BURGER', 14.50),
-	('STEAK', 29.00),
-	('SALAD', 0.50)
-;
-GO
-
--- CAP 17
-CREATE TABLE CHARGEBACK(
-	ChargeBackID INT IDENTITY(1,1),
-	RoomNumber VARCHAR(5) NOT NULL,
-	BookingID INT FOREIGN KEY REFERENCES BOOKING(BookingID)
-	ON DELETE CASCADE
-	ON UPDATE CASCADE,	
-	GuestDrivingID VARCHAR(50) NOT NULL,
-	ItemID INT NOT NULL FOREIGN KEY REFERENCES ITEM(ItemID)
-	ON DELETE CASCADE
-	ON UPDATE CASCADE,
-	ItemQuantity INT,
-	DateOfPurchased DATE NOT NULL
-);
-GO
-
--- CAP 18 
-CREATE TABLE CHECKING_STATUS(
-	CheckingID INT PRIMARY KEY IDENTITY(1, 1),
-	CheckingStatus VARCHAR(55) NOT NULL
-);
-GO
-
-INSERT INTO CHECKING_STATUS
-	VALUES
-		('PENDING'),
-		('HAS CHECKED IN'),
-		('HAS CHECKED OUT')
-;
-GO
-
--- CAP 19
-CREATE TABLE ROOM_BOOKING_DETAIL(
-	RBD_ID INT PRIMARY KEY IDENTITY(1, 1),
-	RoomNumber VARCHAR(25) NOT NULL FOREIGN KEY REFERENCES ROOM(RoomNumber)
-	ON DELETE CASCADE
-	ON UPDATE CASCADE,
-	RoomStatusID INT NOT NULL FOREIGN KEY REFERENCES ROOM_STATUS(RoomStatusID)
-	ON DELETE CASCADE
-	ON UPDATE CASCADE,
-	BookingID INT NOT NULL FOREIGN KEY REFERENCES BOOKING(BookingID),
-	CheckInDate DATE NOT NULL,
-	CheckOutDate DATE NOT NULL,	
-	CheckingIN_OUT_status INT NOT NULL FOREIGN KEY REFERENCES CHECKING_STATUS(CheckingID)
-	ON DELETE CASCADE
-	ON UPDATE CASCADE,
-);
-GO
-
-INSERT INTO ROOM_BOOKING_DETAIL
-	VALUES
-		('A1-01', 2, 1,'2021-10-13', '2021-10-15', 1),
-		('C1-05', 2, 2,'2021-10-13', '2021-10-15', 1)
-;
-GO
-
 -- CAP 20
 CREATE TABLE HOUSEKEEPING_REPORT(
 	HousekeepingReportID INT PRIMARY KEY IDENTITY(1,1),
@@ -451,3 +476,9 @@ INSERT INTO HOUSEKEEPING_REPORT
 ;
 GO
 
+-- Execute this command when things are ready
+-- Change the save path
+BACKUP DATABASE BEN_SEAN_THANY_ASSIG2_DB
+TO DISK = 'C:\myDatabase_backup\assig2_full.bak'
+WITH INIT;
+GO
